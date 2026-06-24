@@ -10,6 +10,12 @@ import joblib
 import tensorflow as tf
 import os
 
+st.set_page_config(
+    page_title="Prediksi Data Kelarutan Senyawa Kimia",
+    page_icon="🧪",
+    layout="wide"
+)
+
 def load_models():
     # Menentukan path folder Models secara relatif dari posisi file ini
     base_path = os.path.join(os.path.dirname(__file__), '..', 'Models')
