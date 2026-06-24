@@ -13,13 +13,13 @@ st.set_page_config(
 
 pg = st.navigation([
         st.Page(
-            "packages/1_Prediction.py",
+            "Pages/1_Prediction.py",
             title="Prediction",
             icon="📊"
         ),
         
         st.Page(
-            "packages/2_Visualization.py",
+            "Pages/2_Visualization.py",
             title="Visualization",
             icon="💡"
         ),
