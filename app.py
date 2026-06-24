@@ -4,11 +4,32 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Set Page Config untuk tampilan profesional
+
 st.set_page_config(
     page_title="Dashboard Eksplorasi Data Senyawa Kimia",
     page_icon="🧪",
     layout="wide"
 )
+
+pg = st.navigation([
+        st.Page(
+            "packages/1_Prediction.py",
+            title="Prediction",
+            icon="📊"
+        ),
+        
+        st.Page(
+            "packages/2_Visualization.py",
+            title="Visualization",
+            icon="💡"
+        ),
+            st.Page(
+            "https://github.com/Rafi-Noufal12",
+            title="Github",
+            icon="🐙"
+        ),
+    ])
+pg.run()
 
 # Judul Dashboard
 st.title("🧪 Dashboard Eksplorasi Data Senyawa Kimia")
